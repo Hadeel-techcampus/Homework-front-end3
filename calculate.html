@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate</title>
+</head>
+<body>
+	<h1>Calculate Two number </h1>
+	<form>
+		<label>First Number :</label><br>
+		<input id = "n1"type="number" name="number1" placeholder="enter first number"><br><br>
+		<label>Second Number :</label><br>
+		<input id = "n2" type="number" name="number2" placeholder="enter second number"><br><br>
+		<button type="button" value="Multiply" onclick= "multiply()">Multiply</button>
+		<button type="button" value="Divide" onclick= "divide()">Divide</button>
+		<p id="test"></p>
+		<p id="test1"></p>
+	</form>
+	<script>
+			function multiply(){
+                var number1 = document.getElementById("n1").value;
+			    var number2 = document.getElementById("n2").value;
+			    var Result = number1 * number2;
+			    //if(!isNaN(Result)){
+			    document.getElementById("test").innerHTML = "The Result is : " + Result;
+			    //}
+			}
+			function divide(){
+                var number1 = document.getElementById("n1").value;
+			    var number2 = document.getElementById("n2").value;
+			    var Result = number1/ number2;
+			    //if(!isNaN(Result)){
+			    document.getElementById("test1").innerHTML = "The Result is : " + Result;
+			    //}
+			}
+
+
+	</script>
+</body>
+</html>
